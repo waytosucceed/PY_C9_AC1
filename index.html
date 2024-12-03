@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AC1</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="./logo/Logo.png" alt="Logo" class="logo" />
+    <img src="./logo/header.png" alt="Header" class="header-image" />
+  </header>
+
+  <div class="container mt-5">
+    <h1 class="text-center">Loops-I</h1>
+    <p class="text-center">Click on each topic to learn more.</p>
+    <div class="row">
+        <div>
+            <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#loopsModal">
+                Loops
+            </button>
+        </div>
+        <div>
+            <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#rangeFunctionModal">
+                Range function
+            </button>
+        </div>
+        <div>
+            <button class="btn btn-custom btn-block" data-toggle="modal" data-target="#rangeForLoopModal">
+                Using the Range function with for loop
+            </button>
+        </div>
+        
+    </div>
+    
+    
+  
+
+
+    <!-- Modals -->
+    <div class="modal fade" id="loopsModal" tabindex="-1" aria-labelledby="loopsLabel" aria-hidden="true">
+        <div class="modal-dialog custom-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loopsLabel">Loops</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-container">
+                        <div class="text-content">
+                            <p style="font-size: 1.5rem;">
+                                🔄 In programming, we often need to repeat tasks! <br><br>
+    
+                                For example, we might need to create multiple characters or patterns in games. 🎮 <br><br>
+    
+                                In such cases repeating the same lines of code can become tedious and in programming we believe in the principle of 
+                                <b style="color: rgb(227, 148, 2);">D.R.Y</b> - Do not Repeat Yourself! 🚫🔁 <br><br>
+    
+                                So, in places where you need to repeat the same set of commands, we use <b style="color: rgb(227, 148, 2);">loops</b>. 🔁 <br><br>
+    
+                                In Python, there are two types of loops: <br>
+                                • <b>For Loop</b> <br>
+                                • <b>While Loop</b> <br><br>
+    
+                                In today’s class, we will focus on the <b style="color: rgb(227, 148, 2);">for-loop</b>. 🔍<br><br>
+    
+                                🧮 Understanding the <b style="color: rgb(227, 148, 2);">range()</b> function, which is frequently used in conjunction with loops, is important for effectively using loops!<br><br>
+    
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rangeFunctionModal" tabindex="-1" aria-labelledby="rangeFunctionLabel" aria-hidden="true">
+        <div class="modal-dialog custom-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rangeFunctionLabel">Range Function</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-container">
+                        <div class="text-content">
+                            <p style="font-size: 1.5rem;">
+
+                                Here's the syntax: <br><br>
+                                <span style="color: rgb(227, 148, 2); font-size: 1.7rem;">range(start, stop, step)</span> <br><br>
+    
+                                range is a predefined function in Python that helps to create a sequence of numbers. It takes the following parameters:<br><br>
+    
+                                • <b>start</b> (optional) - An integer number that specifies which number to start. If not specified, the default value is 0. <br>
+                                • <b>stop</b> (required) - An integer number specifying which number to stop.<br>
+                                • <b>step</b> (optional) - An integer number specifying by what value to increment. If not specified, it gets the default value 1.<br><br>
+    
+                                Now, let’s see how we can use the <b style="color: rgb(227, 148, 2);">range()</b> function along with the for loop to control iterations! 🌀💡
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="rangeForLoopModal" tabindex="-1" aria-labelledby="rangeForLoopLabel" aria-hidden="true">
+        <div class="modal-dialog custom-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rangeForLoopLabel">Using the Range Function with For Loop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-container">
+                        <div class="text-content">
+                            <p style="font-size: 1.5rem;">
+                                🔁 Since we have not specified the start value and step, the sequence: <br>
+                                • Starts from 0 🎯 <br>
+                                • Steps by 1 after every repetition ➡️+1 <br><br>
+    <img src="./images/image9.png" width="22%"/> <br><br>
+                                Let's explore other ways to use the <b style="color: rgb(227, 148, 2);">range()</b> function! 🚀<br><br>
+    
+                                📌 It is not mandatory for you to use the variable name i, you can use any variable name.<br><br>
+    
+                                In the code below, the sequence starts from 1️⃣ and increments by 2️⃣ after every iteration: <br><br>
+                                <img src="./images/image.png" width="30%"/> <br><br>
+    
+                                💡 You can also generate a <b>decreasing sequence</b> using the range function! Let’s see how that works next. ⬇️📉 <br>
+                                <img src="./images/image1.png" width="30%"/> <br><br>
+                                🔄 We can also use a <b style="color: rgb(227, 148, 2);">for-loop</b> to go through each character of a string! ✨ <br><br>
+    
+                                For example: <br>
+                                <img src="./images/image3.png" width="20%"/> <br><br>
+    
+                                Another way to iterate through a string is like this: <br>
+                                <img src="./images/image2.png" width="30%"/> <br><br>
+    
+                                📝 If you want all the characters to be printed on a single line instead of separate lines, you can use the <b>end</b> parameter in the print function. <br><br>
+                                <img src="./images/image5.png" width="30%"/> <br><br>
+
+    
+                                By default, the print function ends with a new line. 🌟<br><br>
+    
+                                Passing <b style="color: rgb(227, 148, 2);">whitespace</b> to the <b>end</b> parameter (e.g., <b>end=' '</b>) indicates that the end character has to be identified by whitespace and not a newline!  🌐<br><br>
+    
+                                The <b>in</b> keyword in a for-loop has two uses: <br>
+                                1️⃣ To check if a value is present in a sequence (like a list, range, or string).<br>
+                                2️⃣ To iterate through a sequence in a for-loop. <br><br>
+    
+                                💡 Example: It can used to check if a particular letter is present in a word like so:
+                                <br>
+                                <img src="./images/image4.png" width="40%"/> <br><br>
+    
+                                We will learn more about these concepts in upcoming classes! 🚀📚
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="stringForLoopModal" tabindex="-1" aria-labelledby="stringForLoopLabel" aria-hidden="true">
+        <div class="modal-dialog custom-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="stringForLoopLabel">Iterating through a String Using For Loop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="content-container">
+                        <div class="text-content">
+                            <p style="font-size: 1.5rem;">
+                                🔄 We can also use a <b style="color: rgb(227, 148, 2);">for-loop</b> to go through each character of a string! ✨ <br><br>
+    
+                                For example: <br>
+                                <img src="./images/image3.png" width="20%"/> <br><br>
+    
+                                Another way to iterate through a string is like this: <br>
+                                <img src="./images/image2.png" width="30%"/> <br><br>
+    
+                                📝 If you want all the characters to be printed on a single line instead of separate lines, you can use the <b>end</b> parameter in the print function. <br><br>
+                                <img src="./images/image5.png" width="30%"/> <br><br>
+
+    
+                                By default, the print function ends with a new line. 🌟<br><br>
+    
+                                Passing <b style="color: rgb(227, 148, 2);">whitespace</b> to the <b>end</b> parameter (e.g., <b>end=' '</b>) tells Python to separate output by spaces instead of newlines! 🌐<br><br>
+    
+                                The <b>in</b> keyword in a for-loop has two uses: <br>
+                                1️⃣ To check if a value is present in a sequence (like a list, range, or string).<br>
+                                2️⃣ To iterate through a sequence in a for-loop. <br><br>
+    
+                                💡 Example: It can used to check if a particular letter is present in a word like so:
+                                <br>
+                                <img src="./images/image4.png" width="40%"/> <br><br>
+    
+                                We will learn more about these concepts in upcoming classes! 🚀📚
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+        
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
